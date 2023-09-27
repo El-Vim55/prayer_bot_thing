@@ -4,7 +4,7 @@ from timings import fajr_to_dhuhr, dhuhr_to_asr, asr_to_maghrib, maghrib_to_isha
 from datetime import datetime
 import asyncio
 
-hook = Webhook('https://discord.com/api/webhooks/1155438123979898940/o0hqSiaOU-LDfldB12N2L4Lo3M24k3l-QSZzcc2Mvl3YrCF-xi9bdwbiOsn5r-49HG-b')
+hook = Webhook('webhook-url')
 now = datetime.now().strftime("%H:%M")    
 
 async def send_prayer_notification(prayer_name, prayer_time):
